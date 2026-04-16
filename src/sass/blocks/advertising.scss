@@ -1,0 +1,194 @@
+.advertising {
+  padding: 50px 0 40px 0;
+  &__wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fit, 440px);
+    grid-auto-rows: 440px;
+  }
+  &__forum {
+    padding: 25px 22px;
+    background: url(/src/img/advertising/pikaso_embed\ 1.jpg) 75% / cover
+      no-repeat;
+    &-icons {
+      display: flex;
+    }
+    &-title {
+      width: 197px;
+      margin-top: 9px;
+      line-height: 41px;
+      font-weight: 800;
+      font-size: 32px;
+      text-transform: uppercase;
+      color: #222426;
+    }
+    &-btn {
+      width: 180px;
+      height: 45px;
+      border: 1px solid #222426;
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 16px;
+      color: #333537;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__catalog {
+    position: relative;
+    padding: 22px 23px;
+    background:
+      linear-gradient(180deg, rgba(21, 21, 22, 0.56) 0%, rgba(0, 0, 0, 0) 100%),
+      url(/src/img/advertising/close-up-roasted-hazelnuts\ 1.jpg) 60% / cover
+        no-repeat;
+    &-title {
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    &-subtitle {
+      width: 233px;
+      margin-top: 19px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #f9f9fb;
+    }
+    &-btn {
+      margin-top: 20px;
+      width: 238px;
+      height: 45px;
+      font-weight: 600;
+      line-height: 20px;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #414345;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-icons {
+      position: absolute;
+      display: flex;
+      bottom: 14.5px;
+      right: 17.5px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advertising {
+    padding-top: 70px;
+    &__wrapper {
+      grid-template-rows: repeat(auto-fit, minmax(323px, auto));
+      grid-auto-rows: minmax(323px, auto);
+    }
+    &__forum {
+      padding: 37px 35px 46px 35px;
+      display: flex;
+      flex-direction: column;
+      &-icons {
+        height: 44px;
+        margin-top: 27.5px;
+        order: 2;
+      }
+      &-title {
+        margin-top: 0;
+        width: 250px;
+        height: 90px;
+        font-size: 40px;
+        line-height: 51px;
+        order: 1;
+      }
+      &-btn {
+        width: 216px;
+        height: 44px;
+        margin-top: 37px;
+        order: 3;
+      }
+    }
+    &__catalog {
+      padding: 40px 36px;
+      &-title {
+        font-size: 26px;
+        width: 380px;
+        line-height: 33px;
+      }
+      &-subtitle {
+        margin-top: 17px;
+        font-size: 18px;
+        width: 324px;
+      }
+      &-btn {
+        margin-top: 17px;
+        width: 227px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .advertising {
+    padding: 80px 0;
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(610px, auto));
+      grid-template-rows: minmax(323px, auto);
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .advertising {
+    padding: 125px 0;
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(830px, auto));
+      grid-template-rows: repeat(auto-fit, minmax(440px, auto));
+    }
+    &__forum {
+      padding: 57px 30px 77px 49px;
+      &-title {
+        font-size: 54px;
+        line-height: 68px;
+        height: 120px;
+      }
+      &-icons {
+        margin-top: 31px;
+        height: 60px;
+      }
+      &-btn {
+        height: 59px;
+        margin-top: 38px;
+        font-size: 18px;
+      }
+    }
+    &__catalog {
+      padding: 62px 28px 74px 48px;
+      &-title {
+        font-size: 34px;
+        line-height: 43px;
+        width: 425px;
+      }
+      &-subtitle {
+        margin-top: 22px;
+        font-size: 20px;
+        width: 420px;
+      }
+      &-btn {
+        margin-top: 44px;
+        width: 266px;
+        height: 60px;
+        font-size: 18px;
+      }
+      &-icons {
+        bottom: 30px;
+        right: 20px;
+      }
+    }
+  }
+}

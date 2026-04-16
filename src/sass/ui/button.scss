@@ -1,0 +1,17 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.btn {
+  display: block;
+  border: none;
+  border-radius: 4px;
+  background: #ffcc02;
+  font-weight: 600;
+  font-size: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .btn {
+    &:hover {
+      background: #e4b600;
+    }
+  }
+}

@@ -1,0 +1,254 @@
+.products {
+  &__title {
+    margin-top: 60px;
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #222426;
+  }
+  &__cards {
+    margin-top: 40px;
+    display: grid;
+    row-gap: 40px;
+  }
+  &__card {
+    display: grid;
+    grid-template-rows: 216px auto;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.27);
+  }
+
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+    &.walnuts {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(21, 21, 22, 0.56) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url(/src/img/products/walnuts-conveyor-belt-modern-nut-processing-factory-golden-hour\ 1.jpg)
+          center center/ cover no-repeat;
+    }
+    &.hazelnut {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(21, 21, 22, 0.56) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url(/src/img/products/fresh-hazelnuts-conveyor-belt-food-processing-factory\ 1.jpg)
+          center center/ cover no-repeat;
+    }
+    &.almond {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(21, 21, 22, 0.56) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url(/src/img/products/almond-processing-conveyor-belt-modern-food-factory\ 1.jpg)
+          center center/ cover no-repeat;
+    }
+    &.mix {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(21, 21, 22, 0.56) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url(/src/img/products/pikaso_embed\ 2.jpg) center center/ cover
+          no-repeat;
+    }
+    &-logo {
+      display: grid;
+      grid-template-columns: 51px 145px;
+      grid-template-rows: 55px;
+      column-gap: 15px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 127%;
+      text-transform: uppercase;
+      color: #fff;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+    }
+    &-icon {
+      width: 6.5px;
+      height: 11px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__func {
+    padding: 20px;
+    background: #222327;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 138px);
+    grid-template-rows: repeat(auto-fit, 115px);
+    grid-auto-rows: 115px;
+    gap: 20px;
+  }
+  &__link {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #393a3c;
+    align-content: center;
+    text-decoration: none;
+    &-icon {
+      height: 50px;
+      width: 50px;
+      display: flex;
+      flex-direction: column;
+      img {
+        height: 100%;
+        width: 100%;
+        // object-fit: cover;
+      }
+    }
+    &-text {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 144%;
+      letter-spacing: 0.01em;
+      text-transform: capitalize;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    margin-top: 70px;
+    font-size: 28px;
+
+    &__cards {
+      margin-top: 20px;
+    }
+
+    &__img {
+      padding: 20px 20px;
+      &-logo {
+        grid-template-columns: 51px 262px;
+        grid-template-rows: 55px;
+      }
+      &-link {
+        width: 26px;
+        height: 26px;
+      }
+      &-icon {
+        width: 6.5px;
+        height: 11px;
+      }
+    }
+    &__func {
+      grid-template-columns: repeat(auto-fit, 147px);
+      grid-template-rows: repeat(auto-fit, 106px);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .products {
+    &__title {
+      margin-top: 80px;
+      font-size: 30px;
+      line-height: 38px;
+    }
+    &__cards {
+      margin-top: 30px;
+    }
+    &__card {
+      grid-template-columns: 573px 668px;
+      grid-template-rows: repeat(auto-fit, 266px);
+    }
+    &__img {
+      padding: 15px;
+      &-logo {
+        padding: 7px;
+        font-size: 24px;
+      }
+      &-link {
+        width: 28px;
+        height: 28px;
+      }
+      &-icon {
+        width: 6px;
+        height: 10px;
+      }
+    }
+    &__func {
+      grid-template-columns: repeat(auto-fit, 142px);
+      grid-template-rows: repeat(auto-fit, 103px);
+    }
+    &__link {
+      &:hover {
+        background: #393a3c;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .products {
+    &__title {
+      margin-top: 100px;
+      font-size: 34px;
+      line-height: 43px;
+    }
+    &__cards {
+      margin-top: 40px;
+    }
+    &__card {
+      grid-template-columns: 780px 900px;
+      grid-template-rows: repeat(auto-fit, 360px);
+    }
+    &__img {
+      padding: 30px;
+      &-logo {
+        grid-template-columns: 65px 335px;
+        grid-template-rows: 73px;
+        padding: 0;
+        font-size: 30px;
+      }
+      &-link {
+        width: 38px;
+        height: 38px;
+      }
+      &-icon {
+        width: 8px;
+        height: 14px;
+      }
+    }
+    &__func {
+      padding: 30px;
+      grid-template-columns: repeat(auto-fit, 195px);
+      grid-template-rows: repeat(auto-fit, 140px);
+    }
+    &__link {
+      padding: 15px;
+      &-icon {
+        height: 70px;
+        width: 70px;
+      }
+    }
+  }
+}

@@ -37,6 +37,7 @@ html {
   scroll-behavior: smooth;
 }
 .container {
+  height: 100%;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
@@ -46,20 +47,20 @@ html {
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 40px;
-    width: 688px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
     padding: 0 100px;
-    width: 1240px;
+    width: 1440px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .container {
     padding: 0 120px;
-    width: 1680px;
+    width: 1920px;
   }
 }
